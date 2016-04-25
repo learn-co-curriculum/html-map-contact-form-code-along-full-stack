@@ -80,7 +80,7 @@ Next, we would like to create inputs for the user to insert their name, email, p
 
 On line 3 we use a `<label>` element to create a text label associated with the form input. By using the `for` attribute set on the label to match the value of the `id` attribute in the input this ties the label to the input so that if a user clicks on the text of the label "Name" it will select the input next to it. You can test this on the example below:
 
-<label for="fullname">Name</label> <input type="text" id="fullname" name="fullname" placeholder="your name">
+<label for="fullname">Name</label> <input type="text" id="fullname" name="fullname" placeholder="your name" style="border:1px solid black;">
 
 The required attribute on line 4 helps us alert the user when they try to submit the form without filling out their name.
 
@@ -114,16 +114,17 @@ The `required` attribute will prevent the browser from submitting the form until
 The last input on line 11 has a type of "submit" this gives us a submit button to submit the form. the value attribute in this case displays the text that will appear on our submit button. 
 
 Next, save the file and refresh the page in the browser to see your form appear. The following code should create a form that displays liek the following example below,
-
+<form>
 <label for="fullnam">Name</label>
-<input type="text" id="fullnam" name="fullname" placeholder="your name" required>
+<input type="text" id="fullnam" name="fullname" placeholder="your name" required style="border:1px solid black;">
 <label for="emai">Email</label>
-<input type="emai" id="email" name="email" placeholder="your email" required>
+<input type="emai" id="email" name="email" placeholder="your email" required style="border:1px solid black;">
 <label for="phon">Phone</label>
-<input type="tel" id="phon" name="phone" placeholder="your phone (optional)">
+<input type="tel" id="phon" name="phone" placeholder="your phone (optional)" style="border:1px solid black;">
 <label for="messag">Message</label>
 <textarea id="messag" name="message" rows="10"></textarea>
-<input type="submit" value="send">
+<input type="submit" value="send" style="border:1px solid black;">
+</form>
 
 Ok, looks good! Now stage and commit your code. In Terminal type `git add contact.html` and press return, then type `git commit -m "add contact form to contact page"` and press return. Then type `git push origin contact-page`. 
 
