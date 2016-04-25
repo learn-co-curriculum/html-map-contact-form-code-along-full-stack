@@ -7,7 +7,7 @@
 
 ## Introduction
 
-In this exercise you will code along with the video below to review the HTML fundamentals you were introduced to in the previous lessons.
+Building upon previous code alongs, in this exercise you will add an embedded iframe map by coding along with the video provided, reviewing the concepts you were introduced to in the previous lessons.
 
 ## Instructions
 
