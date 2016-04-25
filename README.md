@@ -113,8 +113,10 @@ required ...
 
 submit, value send ...
 
-...
+Looks good! Now stage and commit yout code. In Terminal type `git add contact.html` and press return, then type `git commit -m "add contact form to contact page"` and press return. Then type `git push origin contact-page`. 
 
-After you finish, make sure you <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">install Firefox</a> if you haven't already as it is required for the screenshot tests to run. Then, type `learn` command from Terminal to run local tests.
+Since we are satisfied with our work on our contcat page and we feel this feature is publishable we can include the work in our master branch. To do so in Terminal type `git checkout master` and press return to switch to your master branch then type `git merge contact-page` and press return to merge in your commits from the contact-page branch. Then to update our remote type `git push origin master` and press return.
+
+After you're finished, make sure you <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">install Firefox</a> if you haven't already as it is required for the screenshot tests to run. Then, type `learn` command from Terminal to run local tests (Mac), Alternately use the `learn-test` command for Windows. Then submit a pull request on Github and move on to the next lesson!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/html-map-contact-form-code-along' title='HTML Map and Contact Form Code-Along'>HTML Map and Contact Form Code-Along</a> on Learn.co and start learning to code for free.</p>
