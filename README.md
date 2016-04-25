@@ -101,21 +101,33 @@ Let's fill in the rest of our inputs.
 </form>
 ```
 
-type ...
+The `type` attribute as "text" vs "email" will be recognized by the browser so that when a type of email is also required it will validate for you whether the input matches an email including the "@" this is a feature brought to us as part of HTML version 5. Additonally the type of "tel" will bring up the numeric pad on mobile devices where as the type of "text" will bring up the alphabet keypad. This support varies from device to device though.
 
-for, id ...
+Again, the `for` attribute value when matching an `id` attribute value will link them so that clicking on a label will select the cursor into its related input.
 
-name ...
+As discussed in the previous lesson, the `name` attribute is important as it stores the users input under that name (variable). This comes in handy for making use of the users input server-side.
 
-placholder ... 
+The `placeholder` value will appear inside the form input until the uiser starts typing in their own content.
 
-required ... 
+The `required` attribute will prevent the browser from submitting the form until all required fields are filled in properly. Again this is functionality is baked into HTML5 for us automatically.
 
-submit, value send ...
+The last input on line 11 has a type of "submit" this gives us a submit button to submit the form. the value attribute in this case displays the text that will appear on our submit button. 
 
-Looks good! Now stage and commit yout code. In Terminal type `git add contact.html` and press return, then type `git commit -m "add contact form to contact page"` and press return. Then type `git push origin contact-page`. 
+Next, save the file and refresh the page in the browser to see your form appear. The following code should create a form that displays liek the following example below,
 
-Since we are satisfied with our work on our contcat page and we feel this feature is publishable we can include the work in our master branch. To do so in Terminal type `git checkout master` and press return to switch to your master branch then type `git merge contact-page` and press return to merge in your commits from the contact-page branch. Then to update our remote type `git push origin master` and press return.
+<label for="fullnam">Name</label>
+<input type="text" id="fullnam" name="fullname" placeholder="your name" required>
+<label for="emai">Email</label>
+<input type="emai" id="email" name="email" placeholder="your email" required>
+<label for="phon">Phone</label>
+<input type="tel" id="phon" name="phone" placeholder="your phone (optional)">
+<label for="messag">Message</label>
+<textarea id="messag" name="message" rows="10"></textarea>
+<input type="submit" value="send">
+
+Ok, looks good! Now stage and commit your code. In Terminal type `git add contact.html` and press return, then type `git commit -m "add contact form to contact page"` and press return. Then type `git push origin contact-page`. 
+
+Since we are satisfied with our work on our contact page and we feel this feature is publishable we can include the work in our master branch. To do so in Terminal type `git checkout master` and press return to switch to your master branch then type `git merge contact-page` and press return to merge in your commits from the contact-page branch. Then to update our remote type `git push origin master` and press return.
 
 After you're finished, make sure you <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">install Firefox</a> if you haven't already as it is required for the screenshot tests to run. Then, type `learn` command from Terminal to run local tests (Mac), Alternately use the `learn-test` command for Windows. Then submit a pull request on Github and move on to the next lesson!
 
