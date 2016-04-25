@@ -20,7 +20,9 @@ In this exercise you will code along with the video below to review the HTML fun
 
 ### Map Embed
 
-Open the contact.html page in your code editor. Under the `<h3>Contact</h3>` write some comments for the content we will add like so,
+Start by creating a new feature branch in Terminal by typing `git checkout -b contact-page`. 
+
+Then open the contact.html page in your code editor. Under the `<h3>Contact</h3>` write some comments for the content we will add like so,
 
 ```html
 <h3>Contact</h3>
